@@ -1,0 +1,54 @@
+{
+  "name": "use-evts",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --minify --treeshake --shims --clean",
+    "lint": "tsc"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "hook",
+    "pubsub",
+    "events",
+    "browser",
+    "publish",
+    "subscribe",
+    "emitter",
+    "listener"
+  ],
+  "devDependencies": {
+    "@types/react": "^19.1.4",
+    "@types/react-dom": "^19.1.5",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "react": ">=18.2.0",
+    "react-dom": ">=18.2.0"
+  },
+  "license": "MIT",
+  "description": "Lightweight, React-friendly event & pub-sub utilities with full TypeScript support.",
+  "homepage": "https://github.com/FranciscoMendes10866/use-evts#README",
+  "bugs": {
+    "url": "https://github.com/FranciscoMendes10866/use-evts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranciscoMendes10866/use-evts.git"
+  },
+  "author": {
+    "name": "Francisco Mendes",
+    "email": "fmendes_dev@protonmail.ch",
+    "url": "https://github.com/FranciscoMendes10866"
+  }
+}
